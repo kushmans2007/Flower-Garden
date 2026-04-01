@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Flower Garden</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1> Flower Garden </h1>
+<p>CREATE YOUR OWN FLOWER!</p>
+
+<div class="container">
+
+    <div class="tools">
+        <input type="color" id="colorPicker" value="#ff69b4">
+     
+        <button onclick="setEraser()"> Eraser</button>
+        <button onclick="clearCanvas()"> Clear</button>
+    </div>
+
+    <canvas id="drawingCanvas" width="600" height="350"></canvas>
+
+    <input type="text" id="flowerName" placeholder="Enter flower name">
+    <button onclick="saveFlower()">🌼 Save Flower</button>
+
+</div>
+
+<h2>🌼 Saved Flowers Gallery</h2>
+<div id="gallery" class="gallery"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
